@@ -1,0 +1,133 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bodoni Moda", serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #9589af;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgb(239, 227, 252);
+    outline: 2px solid whitesmoke;
+    outline-offset: 3px;
+    border-radius: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    /* list-style-type: ; */
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-shadow: 3px 2px 2px #9589af;
+    text-emphasis-color: blue;
+}
+
+main {
+    padding: 20px;
+
+}
+
+h2 {
+    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+
+    margin-top: 80px;
+    text-align: center;
+    /* display: grid; */
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+label {
+    text-align: center;
+    height: 150px;
+    width: 200px;
+    padding: 50px;
+    border-radius: 6px;
+    border: 1px dashed purple;
+
+}
+
+label:hover {
+    color: #9589af;
+    border: 1px dashed #212121;
+    cursor: pointer;
+}
+
+/* output{
+        display: contents;
+    } */
+
+.mosaic-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+}
+
+.mosaic-image {
+    opacity: 30%;
+    position: relative;
+    top: 133px;
+    object-fit: fill;
+    width: 75px;
+    height: 75px;
+}
+/* 
+.slide-show{
+    position: relative;
+    top: 60px;
+    z-index: 1;
+    object-fit: fill;
+    padding: 20px;
+    height:1175px;
+    justify-content:center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.slide-image{
+    position: relative;
+    
+    object-fit: fill;
+    width: 75px;
+    height: 75px;
+} */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 100%;
+}

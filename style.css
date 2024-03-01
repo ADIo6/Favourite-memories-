@@ -84,26 +84,52 @@ label:hover {
     border: 1px dashed #212121;
     cursor: pointer;
 }
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #imageInput {
+    display: none;
+  }
+  #imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  .imageItem {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    top: 90px;
+    position: relative;
+  }
+  .imageItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 /* output{
         display: contents;
     } */
 
-.mosaic-container {
+/* .mosaic-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1px;
-}
+} */
 
-.mosaic-image {
+/* .mosaic-image {
     opacity: 30%;
     position: relative;
     top: 133px;
     object-fit: fill;
     width: 75px;
     height: 75px;
-}
+} */
 /* 
 .slide-show{
     position: relative;

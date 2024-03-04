@@ -1,0 +1,333 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap");
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+header {
+    
+    background: #212121;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+  font-size: 5rem;
+}
+nav ul {
+    list-style: none;
+    
+    outline: 2px solid whitesmoke;
+    outline-offset: 3px;
+    border-radius: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+
+}
+
+a {
+    color: rgb(173, 172, 172);
+    text-decoration: none;
+
+}
+
+
+
+main {
+    padding: 20px;
+
+}
+
+h2 {
+    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+
+    margin-top: 80px;
+    text-align: center;
+   
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+label {
+    text-align: center;
+    height: 150px;
+    width: 200px;
+    padding: 50px;
+    border-radius: 6px;
+    border: 1px dashed purple;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+  }
+
+  .container{
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+
+  .aboutme{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    
+  }
+  
+  .paraone{
+
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+    border: 1px solid #212121;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size:large
+
+   
+    
+  }
+  .one{
+    width: 60%;
+    display: grid;
+    padding: 10px;
+  }
+  .two{
+    
+    width: 60%;
+    height: fit-content;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(214, 212, 212);
+    border-radius: 10px;
+    border: 2px solid #212121;
+    
+  }
+  .side{
+    display: grid;
+    justify-content: right;
+    width: 70%;
+  }   
+
+  img{
+    
+    width: 100%;
+    height: 70vh;
+    padding: 10px;
+    border: 2px;
+    border-radius: 30px;
+  } */
+  
+  @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  color: #000;
+  background-color: #dfdfdf;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #dfdfdf;
+  background-color: #000;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 6rem 6rem 6rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 0 6rem 0;
+}
+@media only screen and (max-width: 580px) {
+  .nav {
+    padding-bottom: 2rem;
+  }
+}
+.nav__list {
+  display: flex;
+  gap: 16rem;
+  list-style: none;
+}
+@media only screen and (max-width: 920px) {
+  .nav__list {
+    gap: 6rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .nav__list {
+    gap: 4rem;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  color: #fafafa;
+  transition: color 0.2s ease;
+}
+.nav__link:hover {
+  color: #949494;
+}
+.nav__link--active {
+  color: #616161;
+}
+.nav__link--active:hover {
+  color: #616161;
+}
+@media only screen and (max-width: 580px) {
+  .nav__copy {
+    display: none;
+  }
+}
+
+.page-title {
+  margin-bottom: 8rem;
+  font-family: "Anton", sans-serif;
+  font-size: 16rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  line-height: 16rem;
+  color: #fafafa;
+}
+@media only screen and (max-width: 760px) {
+  .page-title {
+    margin-bottom: 6rem;
+    font-size: 8rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .page-title {
+    margin-bottom: 4rem;
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .page-title {
+    margin-bottom: 0;
+    font-size: 5rem;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 760px) {
+  .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
+.content__descriptor {
+  width: 14%;
+  border-top: 1px solid #7b7b7b;
+  padding-top: 4rem;
+}
+@media only screen and (max-width: 760px) {
+  .content__descriptor {
+    width: 100%;
+    padding: 2rem 0;
+    border-top: none;
+  }
+}
+.content__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.content__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 2rem;
+  width: 50%;
+  border-top: 1px solid #7b7b7b;
+  border-bottom: 1px solid #7b7b7b;
+  margin-right: 10rem;
+  padding: 4rem 0;
+}
+@media only screen and (max-width: 920px) {
+  .content__text-box {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .content__text-box {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .content__text-box {
+    border-bottom: none;
+  }
+}
+.content__text {
+  width: 320px;
+}
+@media only screen and (max-width: 580px) {
+  .content__text {
+    width: 100%;
+  }
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 100%;
+}
